@@ -4,8 +4,9 @@ let started = false;
 let btns = ["red", "green", "purple", "blue"];
 let level = 0;
 let leveldisplay = document.querySelector(".headingtwo");
+let buttonstart = document.querySelector("#start")
 
-document.addEventListener("keypress", function () {
+buttonstart.addEventListener("click", function () {
     if (started === false) {
         levelUp();
         started = true;
